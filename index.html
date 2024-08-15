@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Point Counter</h1>
+        <div class="scoreboard">
+            <div class="team">
+                <div id="team1Score" class="score">00</div>
+                <p>TIM 1</p>
+            </div>
+            <div class="versus">vs</div>
+            <div class="team">
+                <div id="team2Score" class="score">00</div>
+                <p>TIM 2</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="addPoint('team1')">+1 Poin</button>
+            <button onclick="addPoint('team2')">+1 Poin</button>
+        </div>
+        <div class="buttons">
+            <button onclick="resetPoints()" class="reset">Reset Poin</button>
+            <button onclick="savePoints()" class="save">Save Poin</button>
+        </div>
+        <footer>
+            <p>Copyright 2024 by BibingUhuuyy</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
